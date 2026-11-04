@@ -20,9 +20,9 @@
   function fallback() {
     const tel = (SITE.phone || '').replace(/\D/g, '');
     return `<div class="cal-fallback">
-      <h3>Online booking is coming soon!</h3>
-      <p>Call or text to reserve your free tax preparation estimate.</p>
-      <p><a class="btn" href="sms:+1${tel}">Text ${SITE.phone}</a> <a class="btn btn-ghost" href="tel:+1${tel}">Call ${SITE.phone}</a></p>
+      <h3>${SITE.calendlyUrl ? 'Book your free estimate online' : 'Online booking is coming soon!'}</h3>
+      <p>${SITE.calendlyUrl ? 'Pick your time on my calendar, or call or text me.' : 'Call or text to reserve your free tax preparation estimate.'}</p>
+      <p>${SITE.calendlyUrl ? `<a class="btn" href="${SITE.calendlyUrl}" target="_blank" rel="noopener">Book online</a> ` : ''}<a class="btn${SITE.calendlyUrl ? ' btn-ghost' : ''}" href="sms:+1${tel}">Text ${SITE.phone}</a> <a class="btn btn-ghost" href="tel:+1${tel}">Call ${SITE.phone}</a></p>
     </div>`;
   }
   // Show a thank-you message when someone books in Calendly.

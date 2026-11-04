@@ -3,7 +3,7 @@ window.SITE = {
   phone: '901-578-7973',
   // Your Calendly event link, e.g. 'https://calendly.com/your-name/free-tax-estimate'.
   // Leave it empty and the page shows "Call or text" buttons instead.
-  calendlyUrl: '',
+  calendlyUrl: 'https://calendly.com/peggyrudarnel/30min',
   // Your Eventbrite organizer page (Eventbrite > Organizer profile > copy the public link).
   eventbriteOrganizerUrl: 'https://www.eventbrite.com/',
   // Free workshops. Paste each event's Eventbrite link into "url" once it's published.
