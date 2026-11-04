@@ -44,9 +44,9 @@ nav a { text-decoration: none; color: var(--navy); font-weight: 600; font-size: 
 .hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 800; text-transform: uppercase; }
 .hero h1 span { color: var(--blue); display: block; }
 .promo { display: inline-block; background: var(--green); color: #fff; font-weight: 800; font-size: 1.25rem; padding: 8px 18px; border-radius: 18px; margin: 0 0 .8rem; }
-.rhyme { font-family: 'Great Vibes', cursive; font-size: 1.7rem; color: var(--green); line-height: 1.2; margin: -.2em 0 .6em; }
+.rhyme { font-family: Inter, system-ui, sans-serif; font-weight: 700; font-style: italic; font-size: 1.2rem; color: var(--green); line-height: 1.35; margin: 0 0 .6em; }
 .rhyme-light { color: #9fe0b4; }
-.services .rhyme { font-size: 1.45rem; color: var(--blue); margin: 0 0 .4em; }
+.services .rhyme { font-size: 1.05rem; color: var(--blue); margin: 0 0 .4em; }
 .step:last-of-type { border-bottom: 0; margin-bottom: 0; }
 .sub { font-size: 1.15rem; font-weight: 600; color: var(--green); margin: 0 0 1rem; }
 .checks { list-style: none; padding: 0; margin: 0 0 1.5rem; }
@@ -139,3 +139,11 @@ footer p { margin: 4px 0; }
 .cal-fallback .btn { margin: 6px; }
 .warn-dark { margin-top: 16px; }
 .book .confirm { margin-top: 16px; }
+
+/* Hero photo with name overlay */
+.hero-photo { max-width: 340px; align-self: center; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 30px rgba(20,40,95,.18); }
+.hero-photo img { border-radius: 0; width: 100%; height: auto; max-height: none; object-fit: initial; }
+.hero-photo figcaption { position: absolute; left: 0; right: 0; bottom: 0; background: linear-gradient(transparent, rgba(20,40,95,.9) 55%); color: #fff; text-align: center; padding: 34px 10px 12px; }
+.hero-photo .sig { font-size: 2.1rem; color: #fff; }
+.hero-photo figcaption span:last-child { font-weight: 600; }
+.hero-in { padding-bottom: 40px; }
