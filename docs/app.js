@@ -38,7 +38,7 @@
   const today = new Date().toISOString().slice(0, 10);
   const upcoming = (SITE.events || []).filter((ev) => ev.date >= today);
   if (!upcoming.length) {
-    list.innerHTML = '<p class="center">New workshops coming soon. Check Eventbrite for the latest.</p>';
+    list.innerHTML = '<p class="center">New events coming soon. Check Eventbrite for the latest.</p>';
   }
   upcoming.forEach((ev) => {
     const d = new Date(`${ev.date}T12:00:00`);
@@ -58,7 +58,7 @@
       a.href = ev.url;
       a.target = '_blank';
       a.rel = 'noopener';
-      a.textContent = 'Register free';
+      a.textContent = 'RSVP free';
       action.appendChild(a);
     } else {
       action.innerHTML = '<span class="soon">Registration opening soon</span>';
