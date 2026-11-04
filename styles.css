@@ -147,3 +147,12 @@ footer p { margin: 4px 0; }
 .hero-photo .sig { font-size: 2.1rem; color: #fff; }
 .hero-photo figcaption span:last-child { font-weight: 600; }
 .hero-in { padding-bottom: 40px; }
+
+/* How it works steps */
+.steps { list-style: none; counter-reset: step; padding: 0; margin: 0 0 24px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.steps li { counter-increment: step; background: #fff; border-radius: var(--radius); padding: 16px 16px 16px 58px; position: relative; }
+.steps li::before { content: counter(step); position: absolute; left: 16px; top: 16px; width: 30px; height: 30px; border-radius: 50%; background: var(--green); color: #fff; font-weight: 800; display: grid; place-items: center; }
+.steps b { display: block; color: var(--navy); }
+.steps span { color: var(--muted); font-size: .9rem; }
+@media (max-width: 900px) { .steps { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .steps { grid-template-columns: 1fr; } }
