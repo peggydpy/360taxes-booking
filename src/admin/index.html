@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Bookings Admin | 360 Taxes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="/"><span class="brand-num">360</span> <span class="brand-word">TAXES</span></a>
+      <nav><span id="who" class="hint"></span><a href="/.auth/logout">Sign out</a></nav>
+    </div>
+  </header>
+  <main class="wrap" style="padding:32px 0">
+    <h2>Appointments</h2>
+    <label>Show from <input type="date" id="from" style="max-width:200px"></label>
+    <label style="margin-left:12px"><input type="checkbox" id="hideCancelled" checked style="width:auto"> Hide cancelled</label>
+    <div class="stats" id="stats"></div>
+    <p id="err" class="error"></p>
+    <div class="table-wrap">
+      <table class="admin-table">
+        <thead><tr><th>Date</th><th>Time</th><th>Client</th><th>Contact</th><th>Filing</th><th>Meeting</th><th>1099</th><th>Source</th><th>Notes</th><th>Status</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <p><button class="btn btn-ghost" id="csv" type="button">Download CSV</button></p>
+  </main>
+  <script src="/admin/admin.js"></script>
+</body>
+</html>
