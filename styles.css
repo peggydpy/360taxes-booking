@@ -140,10 +140,10 @@ footer p { margin: 4px 0; }
 .warn-dark { margin-top: 16px; }
 .book .confirm { margin-top: 16px; }
 
-/* Hero photo: upper body, like the flyer */
-.hero-photo { max-width: 290px; align-self: center; }
-.hero-photo img { border-radius: 24px; width: 100%; height: auto; max-height: none; object-fit: initial; box-shadow: 0 12px 30px rgba(20,40,95,.18); }
-.hero-photo figcaption { position: static; background: none; color: var(--navy); padding: 12px 0 0; }
-.hero-photo .sig { font-size: 2.6rem; color: var(--navy); }
-.hero-photo figcaption span:last-child { display: inline-block; font-weight: 700; letter-spacing: 2px; border-top: 2px solid var(--green); padding-top: 4px; margin-top: 4px; }
+/* Hero photo with name overlay */
+.hero-photo { max-width: 340px; align-self: center; border-radius: 24px; overflow: hidden; box-shadow: 0 12px 30px rgba(20,40,95,.18); }
+.hero-photo img { border-radius: 0; width: 100%; height: auto; max-height: none; object-fit: initial; }
+.hero-photo figcaption { position: absolute; left: 0; right: 0; bottom: 0; background: linear-gradient(transparent, rgba(20,40,95,.9) 55%); color: #fff; text-align: center; padding: 34px 10px 12px; }
+.hero-photo .sig { font-size: 2.1rem; color: #fff; }
+.hero-photo figcaption span:last-child { font-weight: 600; }
 .hero-in { padding-bottom: 40px; }
