@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found</title>
+<script>
+  // Send any wrong link back to the home page (works on username.github.io/repo/ and custom domains).
+  (function () {
+    var l = location, keep = /\.github\.io$/i.test(l.hostname) ? 1 : 0;
+    l.replace(l.pathname.split("/").slice(0, 1 + keep).join("/") + "/");
+  })();
+</script></head><body></body></html>
