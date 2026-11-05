@@ -3,147 +3,200 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Come Get Your FREE Tax Preparation Estimate | Peggy Darnell, 360 Taxes</title>
-  <meta name="description" content="Book a tax appointment with Peggy Darnell, 360 Taxes. Individuals, families, self-employed, gig workers and small businesses. Memphis, TN and online.">
-  <meta property="og:title" content="File With Confidence | Peggy Darnell, 360 Taxes">
-  <meta property="og:description" content="Free tax preparation estimate. Book online or call/text 901-578-7973.">
-  <meta property="og:image" content="assets/flyer.jpg">
+  <title>Tax Preparer · 360 Taxes · Memphis, TN</title>
+  <meta name="description" content="File with confidence. Book your appointment with a 360 Taxes preparer in Memphis, TN. Get your FREE tax preparation estimate.">
+  <link rel="icon" href="images/logo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="config.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="wrap topbar-in">
-      <a class="brand" href="./"><img src="assets/logo.png" alt="360 Taxes: We help turn communities around" width="566" height="227"></a>
-      <nav>
-        <a href="#workshops">Events</a>
-        <a href="#bring">What to bring</a>
-        <a class="btn btn-sm" href="#book">Free estimate</a>
-      </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="swoosh swoosh-blue" aria-hidden="true"></div>
+    <div class="swoosh swoosh-green" aria-hidden="true"></div>
+
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <img class="logo" data-src="logo" alt="360 Taxes — We Help Turn Communities Around">
+        <h1 class="headline">
+          <span class="h-navy">File with</span>
+          <span class="h-blue">Confidence.</span>
+        </h1>
+        <div class="rule"></div>
+        <p class="sub-green">We minimize tax liability.</p>
+        <p class="lede">Your peace of mind matters.<br>Personal attention. Clear answers.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" data-book href="#book">Book Appointment</a>
+          <a class="btn btn-ghost" data-tel href="#">Call / Text</a>
+        </div>
+      </div>
+
+      <div class="hero-person">
+        <div class="photo-frame">
+          <img class="photo" data-src="photo" alt="">
+          <div class="photo-initials" data-initials aria-hidden="true"></div>
+        </div>
+        <div class="signature">
+          <span class="script" data-text="name"></span>
+          <span class="sig-rule"></span>
+          <span class="role" data-text="title"></span>
+        </div>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="wrap hero-in">
-      <div class="hero-copy">
-        <p class="tagline">We help turn communities around</p>
-        <h1>File with <span>confidence.</span></h1>
-        <p class="promo">Don't wait, don't be late, get your FREE tax prep estimate!</p>
-        <p class="sub">We minimize tax liability. Personal attention. Clear answers.</p>
-        <ul class="checks">
-          <li>FREE tax preparation estimate</li>
-          <li>Identify eligible credits &amp; deductions</li>
-          <li>Careful preparation focused on accuracy &amp; compliance</li>
-        </ul>
-        <div class="cta-row">
-          <a class="btn" href="#book">Get my free tax prep estimate</a>
-          <a class="btn btn-ghost" id="callLink" href="tel:+19015787973">Call or text 901-578-7973</a>
+  <main>
+    <!-- ===== SERVICES ===== -->
+    <section class="section">
+      <div class="wrap services-grid">
+        <div class="service-box">
+          <div class="service">
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2"/><circle cx="5.5" cy="9.5" r="2.4"/><circle cx="18.5" cy="9.5" r="2.4"/><path d="M6 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5z"/><path d="M1.5 18c0-2.4 1.8-4 4-4 .9 0 1.6.2 2.2.6C6.7 15.6 6 16.9 6 18.5z"/><path d="M22.5 18c0-2.4-1.8-4-4-4-.9 0-1.6.2-2.2.6 1 1 1.7 2.3 1.7 3.9z"/></svg>
+            </span>
+            <span>Individuals &amp; Families</span>
+          </div>
+          <div class="service">
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="10" cy="7" r="3.5"/><path d="M3 20c0-4 3.1-7 7-7 1.4 0 2.6.4 3.7 1H12v6z"/><rect x="13" y="13.5" width="9" height="6" rx="1"/><path d="M12 20.5h11"/></svg>
+            </span>
+            <span>Self-Employed &amp; Gig Workers</span>
+          </div>
+          <div class="service">
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 4h18l1 5c0 1.4-1.1 2.5-2.5 2.5S17 10.4 17 9c0 1.4-1.1 2.5-2.5 2.5S12 10.4 12 9c0 1.4-1.1 2.5-2.5 2.5S7 10.4 7 9c0 1.4-1.1 2.5-2.5 2.5S2 10.4 2 9z"/><path d="M4 12.5V21h16v-8.5h-1.5V19.5H14V14H9v5.5H5.5v-7z"/></svg>
+            </span>
+            <span>Small Business &bull; Schedule C</span>
+          </div>
+        </div>
+
+        <div class="checks">
+          <ul class="checklist">
+            <li><strong>FREE</strong> tax preparation estimate</li>
+            <li>Identify eligible credits &amp; deductions</li>
+            <li>Careful preparation focused on accuracy &amp; compliance</li>
+          </ul>
+          <div class="peace">
+            <span class="shield" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <strong>Your peace of mind matters.</strong>
+              <span>Careful preparation. A focus on accuracy and compliance.</span>
+            </div>
+          </div>
         </div>
       </div>
-      <figure class="hero-photo">
-        <img src="assets/peggy.jpg" alt="Peggy Darnell, Tax Preparer with 360 Taxes" width="640" height="879">
-        <figcaption><span class="sig">Peggy Darnell</span><span>Tax Preparer</span></figcaption>
-      </figure>
-    </div>
-  </section>
+    </section>
 
-  <section class="services wrap">
-    <div class="card"><h3>Individuals &amp; Families</h3><p class="rhyme">Got a W-2? I'll see it through!</p><p>W-2s, dependents, childcare, education and family credits.</p></div>
-    <div class="card"><h3>Self-Employed &amp; Gig Workers</h3><p class="rhyme">Got a 1099? We'll make it shine!</p><p>1099 income, rideshare, delivery, creators and side hustles.</p></div>
-    <div class="card"><h3>Small Business &bull; Schedule C</h3><p class="rhyme">Business big or business small, I've got the forms to cover it all!</p><p>Sole proprietors and small business owners, plus your personal return.</p></div>
-  </section>
+    <!-- ===== WHAT TO BRING ===== -->
+    <section class="section section-tint" id="bring">
+      <div class="wrap">
+        <h2 class="section-title">What to bring to your appointment</h2>
+        <p class="section-sub">Bring what applies to you. Not sure? Call or text and ask. We'll tell you exactly what you need.</p>
 
-  <section id="book" class="book">
-    <div class="wrap">
-      <h2>Come get your FREE tax preparation estimate</h2>
-      <p class="rhyme rhyme-light">Pick a day, pick a time. The estimate is free, it won't cost a dime!</p>
-      <p class="lead">Reserve a time and I'll give you a free tax preparation estimate. Appointments are about 30 minutes, online, by phone, or in person. All times are Central.</p>
-      <div id="calendlyBox" class="panel cal"></div>
-      <p class="warn warn-dark">Please do <strong>not</strong> enter Social Security numbers or tax IDs when booking. I'll send you a secure link for your documents.</p>
-      <div id="confirm" class="panel confirm" hidden>
-        <h3>You're all set, no need to fret!</h3>
-        <p>Check your email for your confirmation. I'll text you before your appointment. Need to change it? Call or text <a href="tel:+19015787973">901-578-7973</a>.</p>
-        <a class="btn" href="#bring">See what to bring</a>
+        <div class="bring-grid">
+          <div class="bring-card">
+            <h3>Everyone</h3>
+            <ul class="ticks">
+              <li>Photo ID (driver's license or state ID) for you and your spouse</li>
+              <li>Social Security cards or ITIN letters for everyone on the return</li>
+              <li>Birth dates for you, your spouse and dependents</li>
+              <li>Last year's tax return, if you have it</li>
+              <li>IRS Identity Protection PIN, if you were issued one</li>
+              <li>A voided check or bank letter for direct deposit</li>
+            </ul>
+          </div>
+          <div class="bring-card">
+            <h3>Income</h3>
+            <ul class="ticks">
+              <li>W-2s from every job</li>
+              <li>1099-NEC, 1099-K or 1099-MISC (gig, contract or side work)</li>
+              <li>1099-G (unemployment) and SSA-1099 (Social Security)</li>
+              <li>1099-R (retirement or pension)</li>
+              <li>1099-INT / 1099-DIV (bank interest or dividends)</li>
+            </ul>
+          </div>
+          <div class="bring-card">
+            <h3>Credits &amp; deductions</h3>
+            <ul class="ticks">
+              <li>Childcare provider's name, address, tax ID and amount paid</li>
+              <li>1098-T (college tuition) and 1098-E (student loan interest)</li>
+              <li>1098 (mortgage interest) and property tax statements</li>
+              <li>1095-A if you had Marketplace health insurance</li>
+            </ul>
+          </div>
+          <div class="bring-card">
+            <h3>Self-employed &amp; business</h3>
+            <ul class="ticks">
+              <li>Total income records (1099s, app statements, invoices)</li>
+              <li>Business expenses: supplies, phone, equipment, fees</li>
+              <li>Mileage log for business driving</li>
+              <li>Home office size, if you work from home</li>
+            </ul>
+          </div>
+        </div>
+        <p class="privacy-note">For your security, please don't text or email Social Security numbers or tax documents. Bring them to your appointment.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="workshops" class="workshops">
-    <div class="wrap">
-      <h2>Free tax prep estimate events</h2>
-      <p class="rhyme">Come see me, your estimate is free!</p>
-      <p class="lead">Bring your documents, get a free tax preparation estimate, and reserve your appointment for tax season. In person or online. Bring a friend!</p>
-      <ol class="steps">
-        <li><b>RSVP free</b><span>Pick the event for you on Eventbrite.</span></li>
-        <li><b>Come see me</b><span>In person or online. Bring your W-2s, 1099s and ID.</span></li>
-        <li><b>Get your free estimate</b><span>I review your documents and give you a tax prep estimate.</span></li>
-        <li><b>Book &amp; file</b><span>Reserve your appointment and I prepare and file your return.</span></li>
-      </ol>
-      <div id="eventList" class="events"></div>
-      <p class="center"><a class="btn btn-ghost" id="eventbriteAll" target="_blank" rel="noopener">See all events on Eventbrite</a></p>
-    </div>
-  </section>
-
-  <section id="bring" class="bring wrap">
-    <h2>What to bring</h2>
-    <p class="rhyme">Bring your forms and your ID, the rest is easy, leave it to me!</p>
-    <div class="cols">
-      <div class="card">
-        <h3>Everyone</h3>
-        <ul>
-          <li>Photo ID for you (and spouse)</li>
-          <li>Social Security cards or ITIN letters for everyone on the return</li>
-          <li>W-2s from every job</li>
-          <li>1099s (interest, unemployment, retirement, gig apps)</li>
-          <li>1095-A if you had Marketplace health insurance</li>
-          <li>Last year's tax return</li>
-          <li>Bank routing &amp; account number for direct deposit</li>
-        </ul>
+    <!-- ===== FLYER ===== -->
+    <section class="section" id="flyer" data-flyer-section hidden>
+      <div class="wrap flyer-grid">
+        <a class="flyer-frame" data-flyer-link target="_blank" rel="noopener">
+          <img data-src="flyer" alt="Flyer" loading="lazy">
+        </a>
+        <div>
+          <h2 class="section-title">Share my flyer</h2>
+          <p class="section-sub">Know someone who needs their taxes done? Send them my flyer or this page.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" data-flyer-download download>Download flyer</a>
+            <button class="btn btn-ghost" type="button" data-share>Share this page</button>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Families &amp; homeowners</h3>
-        <ul>
-          <li>Childcare provider name, address, tax ID and amount paid</li>
-          <li>1098-T tuition forms and student loan interest (1098-E)</li>
-          <li>Mortgage interest (1098) and property tax statements</li>
-          <li>Charitable donation receipts</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Self-employed &amp; business</h3>
-        <ul>
-          <li>1099-NEC / 1099-K and income records</li>
-          <li>Expense totals: supplies, phone, software, advertising</li>
-          <li>Mileage log or vehicle expenses</li>
-          <li>Home office size, if you use one</li>
-          <li>Estimated tax payments you made</li>
-          <li>Profit &amp; loss statement or bank statements</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="flyer wrap">
-    <img src="assets/flyer.jpg" alt="360 Taxes flyer: File with confidence, Peggy Darnell, Tax Preparer, call or text 901-578-7973" loading="lazy">
-    <div>
-      <h2>Share with a friend</h2>
-      <p class="rhyme">Share with a friend, share with your crew, they'll get a free estimate too!</p>
-      <p>Know someone who needs their taxes done? Send them this page or the flyer.</p>
-      <button class="btn" id="shareBtn" type="button">Share this page</button>
-      <a class="btn btn-ghost" href="assets/flyer.jpg" download="360-Taxes-Peggy-Darnell-Flyer.jpg">Download flyer</a>
-    </div>
-  </section>
+    <!-- ===== CALL BAND ===== -->
+    <section class="callband" id="book">
+      <div class="wrap">
+        <p class="eyebrow"><span></span>Call or text to get started<span></span></p>
+        <a class="big-phone" data-tel href="#">
+          <span class="phone-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          </span>
+          <span data-text="phone"></span>
+        </a>
+        <p class="email-line" data-email-line hidden><a data-mailto href="#"><span data-text="email"></span></a></p>
+        <p class="band-sub">Ask what to bring and reserve your appointment.</p>
+        <div class="cta-row center">
+          <a class="btn btn-green" data-book href="#">Book Appointment</a>
+          <a class="btn btn-outline-light" data-sms href="#">Send a Text</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <footer>
-    <div class="wrap">
-      <p><strong>Peggy Darnell</strong>, Tax Preparer &middot; 360 Taxes &middot; Memphis, TN</p>
-      <p>Call or text <a href="tel:+19015787973">901-578-7973</a></p>
-      <p class="small">Refund amounts depend on your individual tax situation and are never guaranteed.</p>
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <span><span data-text="name"></span> · <span data-text="title"></span>, <span data-text="company"></span> · <span data-text="city"></span></span>
+      <span class="social" data-social></span>
+      <span class="credit">Site by Billionaire Tech</span>
     </div>
   </footer>
 
-  <script src="site-config.js"></script>
-  <script src="app.js"></script>
+  <!-- Sticky bar on phones -->
+  <nav class="mobile-bar" aria-label="Quick actions">
+    <a data-book href="#">Book</a>
+    <a data-tel href="#">Call</a>
+    <a data-sms href="#">Text</a>
+  </nav>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>
